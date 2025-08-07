@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body.cyberpunk {
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0f1f;
+  color: #e0f7ff;
+}
+
+body.cyberpunk header {
+  background: linear-gradient(90deg, #00f7ff, #005eff);
+  box-shadow: 0 0 15px #00f7ff;
+}
+
+body.cyberpunk h2 {
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+body.cyberpunk main {
+  background: #0d162d;
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.5);
+}
+
+body.cyberpunk input, 
+body.cyberpunk select, 
+body.cyberpunk button {
+  background: #0a0f1f;
+  color: #00f7ff;
+  border: 1px solid #00f7ff;
+}
+
+body.cyberpunk button {
+  background: #00f7ff;
+  color: #0a0f1f;
+}
+
+body.cyberpunk button:hover {
+  background: #005eff;
+  color: #fff;
+}
+
+body.cyberpunk #lista-gastos li {
+  background: #1a243b;
+  border: 1px solid #00f7ff;
+  box-shadow: 0 0 8px #00f7ff;
+}
+
+body.claro {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+body.claro header {
+  background: #4CAF50;
+  box-shadow: none;
+}
+
+body.claro main {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body.claro input, 
+body.claro select, 
+body.claro button {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+body.claro button {
+  background: #4CAF50;
+  color: white;
+}
+
+body.claro button:hover {
+  background: #45a049;
+}
+
+body.claro #lista-gastos li {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: none;
+}
+
+header {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#btn-tema {
+  margin-left: 1rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+#lista-gastos {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-gastos li {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+#lista-gastos li span.fecha {
+  font-size: 0.85rem;
+  margin-left: 10px;
+  color: #888;
+}
+
+#resumen-categorias ul {
+  list-style: none;
+  padding: 0;
+}
+
+#resumen-categorias li {
+  margin: 0.5rem 0;
+}
+
+.barra-container {
+  background: #222;
+  border-radius: 4px;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.barra {
+  height: 100%;
+  transition: width 0.8s ease;
+}
+
+#presupuesto {
+  margin-bottom: 2rem;
+}
+
+#presupuesto p {
+  margin: 0.5rem 0;
+}
+
+#barra-presupuesto {
+  height: 100%;
+  background: #00ff99;
+  transition: width 0.8s ease;
+  border-radius: 4px;
+}

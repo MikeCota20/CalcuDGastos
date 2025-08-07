@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Gastos Cyberpunk</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cyberpunk">
+  <header>
+    <h1>Calculadora de Gastos Personales</h1>
+    <button id="btn-tema">Cambiar Tema</button>
+  </header>
+
+  <main>
+
+    <section id="presupuesto">
+      <h2>Presupuesto</h2>
+      <form id="form-presupuesto">
+        <input type="number" id="presupuesto-valor" placeholder="Ingresa tu presupuesto" min="0" step="0.01" required>
+        <button type="submit">Establecer</button>
+      </form>
+      <p>Presupuesto actual: $<span id="presupuesto-actual">0</span></p>
+      <p>Restante después de gastos: $<span id="presupuesto-restante">0</span></p>
+      <div class="barra-container">
+        <div id="barra-presupuesto" class="barra"></div>
+      </div>
+    </section>
+
+    <section id="formulario">
+      <h2>Registrar Gasto</h2>
+      <form id="form-gasto">
+        <input type="text" id="descripcion" placeholder="Descripción" required>
+        <input type="number" id="cantidad" placeholder="Cantidad" min="0" step="0.01" required>
+        <select id="categoria" required>
+          <option value="">Categoría</option>
+          <option value="Alimento">Alimento</option>
+          <option value="Transporte">Transporte</option>
+          <option value="Ocio">Ocio</option>
+          <option value="Servicios">Servicios</option>
+          <option value="Otros">Otros</option>
+        </select>
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
+
+
+    <section id="filtros">
+      <h2>Filtros</h2>
+      <label>
+        Categoría:
+        <select id="filtro-categoria">
+          <option value="">Todas</option>
+          <option value="Alimento">Alimento</option>
+          <option value="Transporte">Transporte</option>
+          <option value="Ocio">Ocio</option>
+          <option value="Servicios">Servicios</option>
+          <option value="Otros">Otros</option>
+        </select>
+      </label>
+      <label>
+        Ordenar por precio:
+        <select id="filtro-precio">
+          <option value="">Sin ordenar</option>
+          <option value="asc">De menor a mayor</option>
+          <option value="desc">De mayor a menor</option>
+        </select>
+      </label>
+    </section>
+
+
+    <section id="resumen">
+      <h2>Resumen</h2>
+      <p>Total: $<span id="total">0</span></p>
+    </section>
+
+
+    <section id="resumen-categorias">
+      <h2>Resumen por Categoría</h2>
+      <ul id="lista-resumen"></ul>
+    </section>
+
+
+    <section id="lista">
+      <h2>Lista de Gastos</h2>
+      <ul id="lista-gastos"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
